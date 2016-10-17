@@ -7,6 +7,11 @@ This is a quick prototyping exercise. I used HTML/CSS/JavaScript to prototype of
 
 ## Screenshots
 (iPhone 5S/iOS 10.0.2/Safari)
+<img src="https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/grid.png">
+<img src="https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/detail+option.png">
+<img src="https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/detail.png">
+<img src="https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/dismiss.png">
+
 
 
 Development notes will be updated soon.
