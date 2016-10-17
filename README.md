@@ -41,4 +41,4 @@ The prototype is written with HTML, CSS, and JavaScript. It uses one external Ja
 ![zIndex2](https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/zIndex2.png)
 
 
-
+### More notes available soon
