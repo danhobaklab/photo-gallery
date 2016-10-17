@@ -1,0 +1,257 @@
+* {
+	z-index: 1;
+}
+
+body {
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* 
+	Header
+	Footer
+*/
+
+.header,
+.footer {
+
+	width: 100vw;
+
+	font-size: 20px;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	
+	z-index: 5;
+}
+
+.header {
+	height: 60px;
+/*	height: 120px;*/
+	top: 0px;
+	position: fixed;
+	text-align: center;
+	display: block;
+}
+
+.footer {
+	height: 45px;
+	bottom: 0px;
+	position: fixed;
+	text-align: left;
+	display: block;
+}
+
+#grid-header,
+#detail-header,
+#detail-footer {
+	background-color: #F5F5F5;
+	color: #333333;
+}
+
+#grid-header,
+#detail-header {
+	border-bottom: 2px solid #E3E3E3;
+}
+
+#detail-footer {
+	border-top: 2px solid #E3E3E3;
+}
+
+#header-title {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.header-icon,
+.footer-icon {
+	position: absolute;
+	line-height: 0;
+	line-height: 0;
+	display: inline-block;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.header-icon {
+	right: 0px;
+	margin-right: 16px;
+/*	margin-right: 16px;*/
+	width: 14px;
+	height: 14px;
+}
+
+.footer-icon {
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+
+/*
+	Photo Gallery 
+*/
+
+#photogallery {
+	margin: 0px;
+	margin-top: 62px;
+/*	margin-top: 122px;*/
+	width: 100%;
+	overflow-y: scroll;
+}
+
+/*
+	Grid View
+*/
+
+#grid-view {
+	padding: 11px;
+	padding-top: 11px;
+	padding-bottom: 15px;
+	line-height: 0;
+
+/*	padding: 22px;
+	padding-top: 30px;*/
+
+}
+
+.thumbnail-wrapper {
+	margin: 4px;
+/*	margin: 8px;*/
+	display: inline-block;
+
+}
+
+.thumbnail,
+.thumbnail img {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.thumbnail {
+	position: absolute; 
+/*	width: 282px;
+	height: 206px;*/
+	overflow: hidden;
+}
+
+.thumbnail img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: auto;
+	height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.thumbnail img.portrait {
+	width: 100%;
+	height: auto;
+}
+
+/* 
+	Detail View
+*/
+
+
+.background {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	opacity: 0.0;
+	visibility: hidden;
+}
+
+/*
+	Transition options - Detail View Background
+*/
+
+.visible {
+	visibility: visible;
+	opacity: 1.0;
+	transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0.0;
+	transition: visibility 0s .2s, opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-webkit-transition: visibility 0s .2s, opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/*
+	Transition options - Photos (grid view, detail view)
+*/
+
+.animate {
+	transition-property: transform, width, height, opacity;
+	transition-duration: .325s, .375s, .375s, .275s;
+	transition-delay: 0s, 0s, 0s, 0s;
+	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transition-property: transform, width, height, opacity;
+	-webkit-transition-duration: .325s, .375s, .375s, .275s;
+	-webkit-transition-delay: 0s, 0s, 0s, 0s;
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.outAnimate {
+	transition-property: transform, width, height, opacity, z-index;
+	transition-duration: .225s, .275s, .275s, .275s, 0s;
+	transition-delay: 0s, 0s, 0s, 0s, .2s;
+	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transition-property: transform, width, height, opacity, z-index;
+	-webkit-transition-duration: .225s, .275s, .275s, .275s, 0s;
+	-webkit-transition-delay: 0s, 0s, 0s, 0s, .2s;
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+/*
+	Transition options - delaying transition of z-index when neighbor photo is loaded
+*/
+
+.loadNeighborAnimate {
+	transition-property: z-index;
+	transition-duration: 0s;
+	transition-delay: .2s;
+	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transition-property: z-index;
+	-webkit-transition-duration: 0s;
+	-webkit-transition-delay: .2s;
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
