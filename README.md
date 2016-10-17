@@ -8,5 +8,10 @@ This is a quick prototyping exercise. I used HTML/CSS/JavaScript to prototype of
 ## Screenshots
 (iPhone 5S/iOS 10.0.2/Safari)
 
+![Grid View](https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/grid.png)
+![Detail View with options](https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/detail_options.png)
+![Detail View](https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/detail.png)
+![Dismiss the detailed view](https://github.com/danhobaklab/photo-gallery/blob/master/screenshots/dismiss.png)
+
 
 Development notes will be updated soon.
