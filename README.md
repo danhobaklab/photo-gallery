@@ -1,7 +1,7 @@
 # Photo Gallery
 You can run a prototype here: [goo.gl/k2nCoj](http://www.dahyepark.com/photo-gallery/) (Running on mobile recommended.)
 
-This is a quick prototyping exercise. I used HTML/CSS/JavaScript to prototype of Photo Gallery. The main concern is a smooth  transition between two views, a grid view and a detailed photo view. Also, gestures to browse photos and dismiss the detailed photo view were implemented.  
+This is a quick prototyping exercise. I used HTML/CSS/JavaScript to develop a prototype of Photo Gallery mobile application. The main concern is a smooth  transition between two views, a grid view and a detailed photo view. Also, gestures to browse photos and dismiss the detailed photo view were implemented.  
 
 ## Functions implemented
 - Transition between a grid view and a detailed photo view
