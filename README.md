@@ -5,7 +5,7 @@ This is a quick prototyping exercise. I used HTML/CSS/JavaScript to prototype of
 
 ## Functions implemented
 - Transition between a grid view and a detailed photo view
-- Show/Hide options on the detailed photo view
+- Tap to show/hide options on the detailed photo view
 - Swipe horizontally to see the previous/next photo on the detailed photo view
 - Swipe down to dismiss the detailed photo view
 
